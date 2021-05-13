@@ -4,35 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Page</title>
+    <title>Dev Web</title>
+    <style>
+        :root{
+            --cor1:#02182B;
+            --cor2:#D7263D;
+            --cor3:#0197F6;
+            --cor4:#448FA3;
+            --cor5:#68C5DB;
+        }
+        /* -------------------------------------- */
+        body{
+            background-color: #02182B;
+        }
+        a{
+            text-decoration: none;
+            color: #68C5DB;
+        }
+        /* -------------------------------------- */
+        .minhaFoto{
+            border-radius: 100%;
+        }
+        .meuNome{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .sobre{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .ondeMoro{
+            font-size: 25px;
+        }
+        /* -------------------------------------- */
+        .nivelA{
+            font-size: 45px;
+        }
+        .nivelI{
+            font-size: 40px;
+        }
+        .nivelB{
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Portfólio de Desenvolvedor Web</h1>
-
+    <h1 class="meuNome">Caique de Souza</h1>
+    
     <ul type="none">
         <li><a href="#sobre">Quem sou Eu</a></li>
         <li><a href="#mySkills">Minhas Habilidades \0/</a></li>
+        <li><a href="https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ" target="_blank">Meu DevMestre</a></li>
     </ul>
-
-    <img src="imagens/bp.jpg" alt="Foto de Caique de Souza" width="500px">
-
-    <p id="sobre">
-        Caique de Souza é um jovem de 20 anos natural do estado do Rio de Janeiro. <strong>Eterno estudante</strong> apaixonado pela área de T.I e <strong>atual aluno</strong> da <a href="https://www.betrybe.com/" target="_blank">Trybe</a>.
-    </p>
     
-    <ul id="mySkills" type="star">
-        <li><strong>Competitivo</strong></li>
-        <li>Autodidata</li>
-        <li>Proativo</li>
-        <li>Organizado</li>
+    <img class="minhaFoto" src="imagens/bp.jpg" alt="Foto de Caique de Souza" width="500px">
+
+
+    <p class="sobre">
+        Sou um jovem de 20 anos formado em Informática para Internet pelo <a href="https://portal.ifrj.edu.br/node/919" target="_blank">I.F.R.J - Campus Engenheiro Paulo de Frontin</a>. <br><strong>Eterno estudante</strong> apaixonado pela área de T.I e <strong>atual aluno</strong> da <a href="https://www.betrybe.com/" target="_blank">Trybe</a>.
+    </p>
+
+    <p class="ondeMoro">Atualmente resido em Engenheiro Paulo de Frontin RJ</p>
+
+    <h2>Minhas Habilidades</h2>
+    <ul>
+        <li class="nivelA">HTML, CSS e PHP</li>
+        <li class="nivelI">Java, C# e C</li>
+        <li class="nivelA">MySql</li>
+        <li class="nivelA">Git</li>
+    </ul>
+    
+    <h2>Minhas características</h2>
+    <ul id="mySkills" type="square">
+        <li class="nivelA"><strong>Competitivo</strong></li>
+        <li class="nivelA">Autodidata</li>
+        <li class="nivelA">Proativo</li>
+        <li class="nivelA">Organizado</li>
     </ul>
 
-    <p>
-        <a href="imagens/bp.jpg" target="_blank">Veja Minha foto</a>
-        ---
-        <a href="https://azaradorecomendados.blogspot.com/" target="_blank">
-            Meu Blog Favorito :()
-        </a>
-    </p>
 </body>
 </html>
