@@ -1,27 +1,34 @@
 :root{
-    --cor1:#02182B;
-    --cor2:#D7263D;
-    --cor3:#0197F6;
-    --cor4:#448FA3;
-    --cor5:#68C5DB;
+    --cor0:#001D57;/*gradi inicio fundo e nav*/
+    --cor1:#001542;/*gradi fim nav e borda ft onde moro*/
+    --cor2:#00091dc7;/*fundo div*/
+    --cor3:#001542;/*fundo nav,hover home-navs*/
+
+    --cor4:#68C5DB;/*links, h2s*/
+    --cor5:#a7d129;/*sombra nav*/
+
+    --cor6:#f0f8ff;/*h1, p, lis*/
 }
 /* ---------------GERAL----------------- */
 body{
-    background-color: #02182B;
+    background-image: linear-gradient(to right,#001D57 , #001542);
 }
 .divs-common{
     border-radius: 5%;
-    background-color: rgb(26, 9, 46);
+    background-color: var(--cor2);
     padding: 50px 0px;
     margin-top: 15px;
     text-align: center;
 }
 a{
     text-decoration: none;
-    color: #68C5DB;
+    color: var(--cor4);
+}
+a:hover{
+    color: var(--cor6);
 }
 p, h1, h2{
-    color: aliceblue;
+    color: var(--cor6);
 }
 p{
     font-size: 25px;
@@ -32,18 +39,54 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
+/*-----------------NAV---------------------*/
+nav {
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    top: -5px;
+    text-align: center;
+    background-image: linear-gradient(to right,#001542,#001D57);
+    border-bottom: 1px solid var(--cor5);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+nav ul {
+    position: relative;
+    top: 50%;
+    transform: translateY(-45%);
+}
+nav ul li{
+    display: inline-block;
+    width: 17%;
+}
+nav ul li img{
+    filter: brightness(100%);
+    width: 60px;
+}
+nav ul li img:hover{
+    filter: brightness(160%);
+}
+.commom-border{
+    border-radius: 15%;
+}
+#github-icon:hover{
+    filter: brightness(0%) invert(1);
+}
 /* ----------------HOME-------------------- */
+#home{
+    padding-top: 80px;
+}
 #home ul li{
     display: inline-block;
     padding: 10px;
     margin: 50px 0px 50px 10px;
-    border: 1px solid #D7263D;
+    border: 1px solid var(--cor5);
     border-radius: 20px;
 }
 #home ul li:hover{
-    background-color: #D7263D;
-    border-color: white;
+    background-color: var(--cor3);
+    border-color: var(--cor1);
 }
 #home img{
     width: 40% ;
@@ -64,7 +107,7 @@ h1{
 #onde-moro img{
     width: 80%;
     border-radius: 5%;
-    border: 1.3px solid rgba(13, 116, 13, 0.651);
+    border: 5px solid var(--cor1);
 }
 #onde-moro p{
     margin-bottom: 25px;
@@ -73,11 +116,11 @@ h1{
 /*--------------------MySkills------------------------*/
 
 #mySkills h2{
-    color: #0197F6;
+    color: var(--cor4);
     font-size: 45px;
 }
 #mySkills ul li{
-    color: white;
+    color: var(--cor6);
 }
 
 .nivelA{
@@ -89,3 +132,15 @@ h1{
 .nivelB{
     font-size: 30px;
 }
+/*------------Footer--------------*/
+footer{
+    margin-top: 25px;
+    padding: 25px;
+    text-align: center;
+    background-color: rgb(12, 12, 12);
+    color: var(--cor6);
+}
+footer ul{
+    list-style: none;
+}
+
