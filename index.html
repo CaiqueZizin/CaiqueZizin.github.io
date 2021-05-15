@@ -5,80 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Web</title>
-    <style>
-        :root{
-            --cor1:#02182B;
-            --cor2:#D7263D;
-            --cor3:#0197F6;
-            --cor4:#448FA3;
-            --cor5:#68C5DB;
-        }
-        /* -------------------------------------- */
-        body{
-            background-color: #02182B;
-        }
-        a{
-            text-decoration: none;
-            color: #68C5DB;
-        }
-        /* -------------------------------------- */
-        .minhaFoto{
-            border-radius: 100%;
-        }
-        .meuNome{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .sobre{
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        }
-        .ondeMoro{
-            font-size: 25px;
-        }
-        /* -------------------------------------- */
-        .nivelA{
-            font-size: 45px;
-        }
-        .nivelI{
-            font-size: 40px;
-        }
-        .nivelB{
-            font-size: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="meuNome">Caique de Souza</h1>
+    <div id="home" class="divs-common">
+        <h1>Caique de Souza Costa</h1>
+        
+        <ul type="square">
+            <li><a href="#sobre">Quem sou Eu</a></li>
+            <li><a href="#mySkills">Minhas Habilidades \0/</a></li>
+            <li><a href="https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ" target="_blank">Meu DevMestre</a></li>
+        </ul>
+
+        <img src="imagens/bp.jpg" alt="Foto de Caique de Souza" width="500px">
+        
+    </div>
     
-    <ul type="none">
-        <li><a href="#sobre">Quem sou Eu</a></li>
-        <li><a href="#mySkills">Minhas Habilidades \0/</a></li>
-        <li><a href="https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ" target="_blank">Meu DevMestre</a></li>
-    </ul>
+    <div id="sobre" class="divs-common">
+        <p id="p1-sobre">
+            Sou um jovem de 20 anos formado em Informática para Internet pelo <a href="https://portal.ifrj.edu.br/node/919" target="_blank">I.F.R.J - Campus Engenheiro Paulo de Frontin</a>.
+        </p>
+        <p>
+            <strong>Eterno estudante</strong> apaixonado pela área de T.I e <strong>atual aluno</strong> da <a href="https://www.betrybe.com/" target="_blank">Trybe</a>.
+        </p>
+    </div>
     
-    <img class="minhaFoto" src="imagens/bp.jpg" alt="Foto de Caique de Souza" width="500px">
+    <div id="onde-moro" class="divs-common">
+        <p class="ondeMoro">Atualmente resido na cidade <strong>verde</strong> do estado do Rio de Janeiro. <br> <a href="https://www.paulodefrontin.rj.gov.br/" target="_blank">Engenheiro Paulo de Frontin, RJ</a></p>
+        <img src="imagens/frontin/f3.jpg" alt="Imagem de Engenheiro Paulo de Frontin">
+    </div>
 
-
-    <p class="sobre">
-        Sou um jovem de 20 anos formado em Informática para Internet pelo <a href="https://portal.ifrj.edu.br/node/919" target="_blank">I.F.R.J - Campus Engenheiro Paulo de Frontin</a>. <br><strong>Eterno estudante</strong> apaixonado pela área de T.I e <strong>atual aluno</strong> da <a href="https://www.betrybe.com/" target="_blank">Trybe</a>.
-    </p>
-
-    <p class="ondeMoro">Atualmente resido em Engenheiro Paulo de Frontin RJ</p>
-
-    <h2>Minhas Habilidades</h2>
-    <ul>
-        <li class="nivelA">HTML, CSS e PHP</li>
-        <li class="nivelI">Java, C# e C</li>
-        <li class="nivelA">MySql</li>
-        <li class="nivelA">Git</li>
-    </ul>
     
-    <h2>Minhas características</h2>
-    <ul id="mySkills" type="square">
-        <li class="nivelA"><strong>Competitivo</strong></li>
-        <li class="nivelA">Autodidata</li>
-        <li class="nivelA">Proativo</li>
-        <li class="nivelA">Organizado</li>
-    </ul>
+    <div id="mySkills" class="divs-common">
+        <h2>Minhas Habilidades</h2>
+        <ul>
+            <li class="nivelA">HTML, CSS e PHP</li>
+            <li class="nivelI">Java, C# e C</li>
+            <li class="nivelA">MySql</li>
+            <li class="nivelA">Git</li>
+        </ul>
+        
+        <h2>Minhas características</h2>
+        <ul type="square">
+            <li class="nivelA"><strong>Competitivo</strong></li>
+            <li class="nivelA">Autodidata</li>
+            <li class="nivelA">Proativo</li>
+            <li class="nivelA">Organizado</li>
+        </ul>
+    </div>
 
 </body>
 </html>

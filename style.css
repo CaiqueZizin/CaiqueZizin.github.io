@@ -1,0 +1,91 @@
+:root{
+    --cor1:#02182B;
+    --cor2:#D7263D;
+    --cor3:#0197F6;
+    --cor4:#448FA3;
+    --cor5:#68C5DB;
+}
+/* ---------------GERAL----------------- */
+body{
+    background-color: #02182B;
+}
+.divs-common{
+    border-radius: 5%;
+    background-color: rgb(26, 9, 46);
+    padding: 50px 0px;
+    margin-top: 15px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #68C5DB;
+}
+p, h1, h2{
+    color: aliceblue;
+}
+p{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* ----------------HOME-------------------- */
+#home ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 50px 0px 50px 10px;
+    border: 1px solid #D7263D;
+    border-radius: 20px;
+}
+#home ul li:hover{
+    background-color: #D7263D;
+    border-color: white;
+}
+#home img{
+    width: 40% ;
+    border-radius: 100%;
+}
+/* -------------------Sobre---------------- */
+
+#sobre p{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+#p1-sobre{
+    margin-bottom: 20px;
+}
+/*-------------------ONDE MORO-------------------*/
+#onde-moro img{
+    width: 80%;
+    border-radius: 5%;
+    border: 1.3px solid rgba(13, 116, 13, 0.651);
+}
+#onde-moro p{
+    margin-bottom: 25px;
+}
+
+/*--------------------MySkills------------------------*/
+
+#mySkills h2{
+    color: #0197F6;
+    font-size: 45px;
+}
+#mySkills ul li{
+    color: white;
+}
+
+.nivelA{
+    font-size: 45px;
+}
+.nivelI{
+    font-size: 40px;
+}
+.nivelB{
+    font-size: 30px;
+}
