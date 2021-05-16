@@ -76,6 +76,7 @@ nav ul li img:hover{
 /* ----------------HOME-------------------- */
 #home{
     padding-top: 80px;
+    padding-bottom: 130px/* 130px bom p/ desk .. 80px bom p/ mobile*/;
 }
 #home ul li{
     display: inline-block;
@@ -88,21 +89,21 @@ nav ul li img:hover{
     background-color: var(--cor3);
     border-color: var(--cor1);
 }
-#home img{
-    width: 40% ;
+#h-sobre img{
+    float: right;
+    width: 180px;/* 180px -> bom p/ dektop .. 30% bom p/ mobile */
+    margin-right: 10px;
     border-radius: 100%;
+    border: 6px solid var(--cor1);
 }
-/* -------------------Sobre---------------- */
-
-#sobre p{
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
+#h-sobre p{
+    margin-left: 5%;
     text-align: left;
 }
-#p1-sobre{
+.espaco-p-sobre{
     margin-bottom: 20px;
 }
+
 /*-------------------ONDE MORO-------------------*/
 #onde-moro img{
     width: 80%;
@@ -130,7 +131,7 @@ nav ul li img:hover{
     font-size: 40px;
 }
 .nivelB{
-    font-size: 30px;
+    font-size: 3%0px;
 }
 /*------------Footer--------------*/
 footer{
