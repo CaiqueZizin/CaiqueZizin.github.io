@@ -59,7 +59,8 @@ nav ul {
 nav ul li{
     display: inline-block;
     width: 1%;
-    animation-name: navAnimation;
+    animation-name: contactButtonsAnimation;
+    animation-delay: 0.3s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
@@ -79,10 +80,11 @@ nav ul li img:hover{
 /* ----------------HOME-------------------- */
 #home{
     padding-top: 80px;
-    padding-bottom: 130px/* 130px bom p/ desk .. 80px bom p/ mobile*/;
+    padding-bottom: 30px;
 }
 #home ul li{
     display: inline-block;
+    width: 23%;
     padding: 10px;
     margin: 50px 0px 50px 10px;
     border: 1px solid var(--cor5);
@@ -106,6 +108,9 @@ nav ul li img:hover{
 .espaco-p-sobre{
     margin-bottom: 20px;
 }
+#p-citacao{
+    margin-top: 60px;
+}
 
 /*-------------------ONDE MORO-------------------*/
 #onde-moro img{
@@ -114,7 +119,7 @@ nav ul li img:hover{
     border: 5px solid var(--cor1);
 }
 #onde-moro p{
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 /*--------------------MySkills------------------------*/
@@ -132,6 +137,7 @@ nav ul li img:hover{
 }
 #mySkills ul li{
     color: var(--cor6);
+    text-align: left;
 }
 .nivelA{
     font-size: 45px;
@@ -154,7 +160,7 @@ footer ul{
     list-style: none;
 }
 
-@keyframes navAnimation {
+@keyframes contactButtonsAnimation {
     to{
         width: 18%;
     }
